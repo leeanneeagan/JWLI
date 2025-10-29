@@ -1,0 +1,321 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /* Example for bold text */
+}
+
+
+span {
+  font-size: 10px;
+}
+
+
+
+/******************************************
+/* Apply Btn in Nav top
+/*******************************************/
+nav>button {
+  background-color: #373c43;
+  /* dark gray background */
+  color: white;
+  /* white text */
+  padding: 10px 50px;
+  /* space around text */
+  font-size: 16px;
+  /* text size */
+  font-family: Arial, sans-serif;
+  /* clean font */
+  cursor: pointer;
+  /* pointer on hover */
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 50px;
+  border: 1px solid black;
+  clear: both;
+}
+
+footer {
+  height: auto;
+  border: 1px solid black;
+  background-color: rgb(145, 156, 162);
+  clear: both;
+  padding: 10px 30px;
+}
+
+
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 255, 255, 0);
+  text-align: center;
+
+}
+
+section {
+  flex: 1;
+  height: auto;
+  border: 2px solid rgba(255, 0, 0, 0);
+
+}
+
+/******************************************
+section FIRST
+/*******************************************/
+.FIRST {
+  display: flex;
+  flex-direction: row;
+}
+
+.first {
+  background-color: rgb(241, 243, 245);
+  border: 2px solid rgba(25, 0, 255, 0);
+  flex: 1;
+}
+
+/******************************************
+section SECOND
+/*******************************************/
+.SECOND {
+  display: flex;
+  flex-direction: row;
+}
+
+.second {
+  flex: 1;
+  border: 2px solid rgba(55, 255, 112, 0);
+}
+
+.pink {
+  border-top: 4px solid rgb(249, 222, 239);
+  padding: 100px;
+  padding-top: 0px;
+}
+
+/******************************************
+section Who We Are
+/*******************************************/
+.WWA {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgb(237, 239, 241);
+  margin: 40px;
+}
+
+.wwa {
+  flex: 1;
+}
+
+/******************************************
+section Newsletter
+/*******************************************/
+.Newsletter {
+  height: 60px;
+  background-color: rgb(186, 197, 207);
+  display: flex;
+  flex-flow: row;
+  color: white;
+}
+
+.left {
+  color: white;
+}
+
+/******************************************
+nav footer 
+/*******************************************/
+footer article {
+  margin: 10px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-flow: row;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.one {
+  flex: 1;
+  gap: 5px;
+
+}
+
+/******************************************
+/* END*********************LAYOUT
+start css
+/*******************************************/
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+nav a {
+  color: rgb(138, 135, 140);
+  font-size: 20px;
+
+}
+
+
+/******************************************
+/* FIRST
+/*******************************************/
+.first img {
+  width: 100%;
+}
+
+.first {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: rgb(89, 68, 86);
+}
+
+.first h1 {
+  font-weight: normal;
+}
+
+.first input {
+  margin: 30px 5px;
+  flex-wrap: nowrap;
+
+}
+
+.email {
+  background-color: #c3ced7;
+  color: white;
+  border: 1px solid #a2b0b9;
+  border-radius: 10px;
+  padding: 4px 30px;
+  font-size: 14px;
+  cursor: not-allowed;
+  opacity: 0.6;
+  margin: 20px;
+}
+
+.email-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.rightTOP img {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 1024px) {
+  section {
+    background-color: green;
+  }
+}
+
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    background-color: aqua;
+  }
+
+  main {
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+    background-color: aqua;
+  }
+
+  main {
+    flex-flow: column;
+  }
+
+  img {
+    display: none;
+  }
+}
